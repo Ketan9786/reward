@@ -1,0 +1,25 @@
+
+<div>
+    <app-navbar></app-navbar>
+</div>
+
+<form class="row g-3">
+    <div class="col p-5">
+
+   
+    <div class="col-4 m-4">
+      <label for="validationDefault01" class="form-label">UserName</label>
+      <input  class="form-control"  type="text" (input)="getUsername($event)" id="validationDefault01"  value={{username}} placeholder="please enter your username">
+    </div>
+
+    <div class="col-4 m-4">
+      <label for="validationDefault05" class="form-label">Password</label>
+      <input type="password" class="form-control" id="validationDefault05" (input)="getPass($event)" value={{password}} placeholder="please enter you password" required>
+    </div>
+    
+    <div class="col-12 m-4">
+      <a routerLink={{routpath}} routerLinkActive="active"><button class="btn btn-primary" type="submit" (click)="onClick()">Submit form</button></a>
+    </div>
+</div>
+  </form>
+ 

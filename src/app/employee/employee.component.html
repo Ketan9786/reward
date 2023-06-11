@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container">
+    This is Employee DashBoard
+    <div class="card-body p-4 " *ngFor="let quote of employeedata">
+       
+        <h5 class="card-title">Empoyee Name:{{quote.emmpolyeename}}</h5>
+   
+  
+        <p class="card-text">Manager Comment : {{quote.managercomment}}</p>
+  
+   
+        <igc-rating value={{quote.rating}} readonly="true"></igc-rating>
+      
+    </div>
+       
+    <form  *ngFor="let quote of employeedata">
+        <div class="form-group">
+         
+          <input type="text" class="form-control" id={{quote.id}}  placeholder="Enter Your Comment" (input)="onChange($event)">
+          
+        </div>
+
+        <button type="submit" class="btn btn-primary m-4" (click)="onSubmit()">Submit</button>
+      </form>

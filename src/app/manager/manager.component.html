@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="container">
+    This is Manager DashBoard
+</div>
+<div class="table-responsive">
+<table class="table ">
+    <thead >
+      <tr>
+        <th scope="col" >SI NO</th>
+        <th scope="col"><input type="text" placeholder="EMPLOYEE ID" (input)="onChange($event)"></th>
+       
+        <th scope="col">EMPLOYEE NAME</th>
+        <th scope="col">Manager Comment </th>
+        <th scope="col">Empolyee Comment</th>
+        <th scope="col">Rating</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable">
+      <tr *ngFor="let quote of employeedata;let i=index;" >
+        <th scope="row" >{{i+1}}</th>
+        <td >{{quote.empolyeeid}}</td>
+        <td>{{quote.emmpolyeename}}</td>
+        <td><input type="text" (input)="commetadd($event)" id={{quote.id}} value={{quote.managercomment}}></td>
+        <td><p disabled >{{quote.empolyeecomment}}</p></td>
+        <td>     <igc-rating value={{quote.rating}} min="1" max="5" (igcChange)="ratingChanged($event)" id={{quote.id}}></igc-rating>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+  
+  <input type="submit" name="comment" id="managercomment" class="m-4" (click)="onSubmit()">
+
+</div>
