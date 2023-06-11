@@ -16,7 +16,7 @@
     <form  *ngFor="let quote of employeedata">
         <div class="form-group">
          
-          <input type="text" class="form-control" id={{quote.id}}  placeholder="Enter Your Comment" (input)="onChange($event)">
+          <input type="text" class="form-control" id={{quote.id}}  placeholder={{quote.empolyeecomment}} (input)="onChange($event)">
           
         </div>
 

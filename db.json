@@ -6,7 +6,7 @@
       "manager": "Nilesh",
       "department": "IT",
       "managercomment": "Your are the best",
-      "empolyeecomment": "Thank you for your appreciation. ",
+      "empolyeecomment": "Thank you for your support.",
       "rating": "3",
       "id": 1
     },
@@ -35,9 +35,9 @@
       "empolyeeid": 1004,
       "manager": "Sunil",
       "department": "Finance",
-      "managercomment": "",
+      "managercomment": "undefined",
       "empolyeecomment": "",
-      "rating": 4,
+      "rating": "3",
       "id": 4
     },
     {
@@ -47,7 +47,7 @@
       "department": "Finance",
       "managercomment": "",
       "empolyeecomment": "",
-      "rating": 4,
+      "rating": "3",
       "id": 5
     },
     {
@@ -57,7 +57,7 @@
       "department": "Finance",
       "managercomment": "",
       "empolyeecomment": "",
-      "rating": 4,
+      "rating": "3",
       "id": 6
     },
     {
@@ -166,7 +166,7 @@
       "manager": "Sunil",
       "department": "Finance",
       "managercomment": "",
-      "empolyeecomment": "",
+      "empolyeecomment": "asdasd",
       "rating": 4,
       "id": 17
     },

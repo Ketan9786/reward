@@ -10,6 +10,7 @@ export class EmployeeComponent {
   employeedata:any;
   employeecomment:any;
   id:any;
+
 ngOnInit(): void {
  fetch(this.url).then((response) => response.json()).then(res=>{this.employeedata=res
 
@@ -41,6 +42,8 @@ onSubmit(){
         "Content-Type": "application/json",
     },
 });
-alert("your resoponse has been submitted")
+alert("your resoponse has been submitted successfully...")
+
 }
+
 }
